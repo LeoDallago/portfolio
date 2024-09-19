@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap";
+@import "bootstrap-icons";
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+:root{
+  font-size: 16px;
+}
+*{
+  font-family: 'Gowun Batang', sans-serif;
+}
+
+
+section{
+  min-height: 40vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+

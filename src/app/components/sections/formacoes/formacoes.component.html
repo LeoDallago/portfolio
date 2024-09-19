@@ -1,0 +1,26 @@
+<section class="d-flex justify-content-center align-items-center mt-3" id="formacoes">
+    <div class="container">
+        <h2 class="display-5 text-center">Formações</h2>
+
+        <div class="row flex-wrap justify-content-center g-3">
+            <div *ngFor="let item of itensFormacao" class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <span class="rounded-pill px-3 text-bg-dark">{{item.periodo}}</span>
+                        <br/>
+                        <label class="fs-5 fw-semibold">{{item.local}}</label>
+                        <br/>
+                        <label>{{item.curso}}</label>
+                    </div>
+
+                    <div class="card-body">
+                        <p>
+                            <span class="fw-semibold">Competências:</span>
+                            {{item.competencias}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

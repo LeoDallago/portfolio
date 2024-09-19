@@ -1,0 +1,28 @@
+<nav class="navbar sticky-top navbar-expand-lg app-nav-background"> <!---todo aplicar cor e corrigir navbar-->
+    <div class="container py-2">
+        <a class="navbar-brand fw-light" href="#">Leo Dallago</a>
+        <button
+                (click)="colapsarNavbar = !colapsarNavbar"
+                class="navbar-toggler"
+                type="button"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngClass]="{ show: colapsarNavbar }">
+            <ul class="navbar-nav ms-auto">
+                <li *ngFor="let link of linksNavBar" class="nav-item">
+                    <a
+                       class="nav-link active"
+                       aria-current="page"
+                       [href]="link.href"
+                    >
+                        {{link.texto}}
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
