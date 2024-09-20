@@ -21,5 +21,6 @@ export class NavbarComponent {
     { href: "#stack", texto: "Stack" },
     { href: "#experiencias", texto: "Experiências" },
     { href: "#formacoes", texto: "Formações" },
+    { href: "#portfolio", texto: "Portfolio" },
   ];
 }

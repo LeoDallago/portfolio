@@ -7,11 +7,22 @@ import {HabilidadesComponent} from "./components/sections/habilidades/habilidade
 import {StackComponent} from "./components/sections/stack/stack.component";
 import {ExperienciasComponent} from "./components/sections/experiencias/experiencias.component";
 import {FormacoesComponent} from "./components/sections/formacoes/formacoes.component";
+import {PortfolioComponent} from "./components/sections/portfolio/portfolio.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [NgClass, FooterComponent, NavbarComponent, SobreComponent, HabilidadesComponent, StackComponent, ExperienciasComponent, FormacoesComponent],
+  imports: [
+    NgClass,
+    FooterComponent,
+    NavbarComponent,
+    SobreComponent,
+    HabilidadesComponent,
+    StackComponent,
+    ExperienciasComponent,
+    FormacoesComponent,
+    PortfolioComponent
+  ],
   templateUrl: "app.component.html",
 })
 export class AppComponent {
