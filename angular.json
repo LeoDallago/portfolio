@@ -104,7 +104,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "",
+            "baseHref": "https://leodallago.github.io/portfolio-2024/",
             "repo": "https://github.com/LeoDallago/portfolio-2024.git"
           }
         }
