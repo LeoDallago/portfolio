@@ -12,19 +12,19 @@ import { ItemPortfolio } from "./models/item-portfolio";
 export class PortfolioComponent {
 public itensPortfolio: ItemPortfolio[] = [
   {
-    foto:"/Locadora.png",
+    foto:"assets/Locadora.png",
     descricao:"Locadora de Carros",
   },
   {
-    foto:"/Adivinhacao.png",
+    foto:"assets/Adivinhacao.png",
     descricao:"Jogo de Adivinhacao",
   },
   {
-    foto:"/EmpowerRH.png",
+    foto:"assets/EmpowerRH.png",
     descricao:"EmpowerRH",
   },
   {
-    foto:"/EmpowerRH(React).png",
+    foto:"assets/EmpowerRH(React).png",
     descricao:"EmpowerRH (Versão em React)",
   },
 ]
