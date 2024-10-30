@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NgForOf } from "@angular/common";
+import { NgClass, NgForOf } from "@angular/common";
 import { ItemPortfolio } from "./models/item-portfolio";
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [NgForOf],
+  imports: [NgForOf, NgClass],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
@@ -32,4 +32,8 @@ export class PortfolioComponent {
       descricao: "MovieDB",
     },
   ]
+
+  logar(anterior: string) {
+    console.log(anterior)
+  }
 }

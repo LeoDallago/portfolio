@@ -3,18 +3,18 @@
         <div class="row justify-content-center">
             <h2 class="display-5 text-center">Portfolio</h2>
             <div class="col-lg-9">
-                <div id="carouselExample" class="carousel slide ">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div *ngFor="let item of itensPortfolio" class="carousel-item active text-center">
+                        <div *ngFor="let item of itensPortfolio; let i = index" [ngClass]="{'carousel-item': true, 'active': i === 0}" class="text-center">
                             <img [src]="item.foto" class="d-block mb-1 img-fluid" alt="...">
                             <p class="fs-5 fw-semibold">{{ item.descricao }}</p>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <button (click)="logar('anterior')" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <button (click)="logar('proximo')" class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
