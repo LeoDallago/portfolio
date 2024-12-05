@@ -31,6 +31,10 @@ export class PortfolioComponent {
       foto: "assets/MovieDB.png",
       descricao: "MovieDB",
     },
+    {
+      foto: "assets/OrganizaMed.png",
+      descricao: 'OrganizaMed',
+    }
   ]
 
   logar(anterior: string) {
